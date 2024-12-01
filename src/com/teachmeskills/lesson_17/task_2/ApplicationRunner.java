@@ -18,7 +18,7 @@ public class ApplicationRunner {
         System.out.println("Enter a date in DD-MM-YYYY format:");
         String inputDate = scanner.nextLine();
 
-        MyFunctionalInterface.GenericFunction<String> getDayOfWeek = () -> {
+        MyFunctionalInterface<String> getDayOfWeek = () -> {
             try {
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy");
                 LocalDate localDate = LocalDate.parse(inputDate, formatter);
